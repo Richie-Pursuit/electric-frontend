@@ -50,9 +50,9 @@ function ProductEditForm() {
     
     return (
         <div>
-            <form onSubmit={handleSubmit}>
-            <label htmlFor="name">Name:</label>
-            <input
+            <form className="bg-orange-200 p-5 rounded w-full" onSubmit={handleSubmit}>
+            <label className="bg-orange-100 m-5 p-3  block font-bold mb-2" htmlFor="name">Name:</label>
+            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
             id="name"
             value={product.name}
             type="text"
@@ -60,8 +60,8 @@ function ProductEditForm() {
             placeholder="Name of Product"
             required
             />
-            <label htmlFor="image">Image Link:</label>
-            <input
+            <label className="bg-orange-100 m-5 p-3  block font-bold mb-2" htmlFor="image">Image Link:</label>
+            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
             id="image"
             type="text"
             pattern="http[s]*://.+"
@@ -70,8 +70,8 @@ function ProductEditForm() {
             placeholder="http://"
             onChange={handleTextChange}
             />
-            <label htmlFor="price">Price:</label>
-            <input
+            <label className="bg-orange-100 m-5 p-3  block font-bold mb-2" htmlFor="price">Price:</label>
+            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
             id="price"
             type="number"
             name="price"
@@ -79,15 +79,15 @@ function ProductEditForm() {
             placeholder="$"
             onChange={handleTextChange}
             />
-            <label htmlFor="top_speed">Top Speed Mph:</label>
-            <input
+            <label className="bg-orange-100 m-5 p-3  block font-bold mb-2" htmlFor="top_speed">Top Speed Mph:</label>
+            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
             id="top_speed"
             type="number"
             onChange={handleTextChange}
             checked={product.top_speed}
             />
-            <label htmlFor="description">Description:</label>
-            <input
+            <label className="bg-orange-100 m-5 p-3  block font-bold mb-2" htmlFor="description">Description:</label>
+            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
             id="description"
             value={product.description}
             type="text"
@@ -97,10 +97,10 @@ function ProductEditForm() {
             />
 
             <br />
-            <input type="submit" />
+            <input class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit" />
         </form>
         <Link to={`/products/${id}`}>
-        <button>Nevermind!</button>
+        <button class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">Nevermind!</button>
       </Link>
         </div>
     );

@@ -15,28 +15,13 @@ function Products( { handleClick } ) {
         .catch((c) => console.warn("catch", c));
     }, []);
   
+    // className="grid grid-cols-3 grid-rows-2 "
     return (
-        <div>
-        {console.log("I render first")}
-        <section>
-            <table>
-            <thead>
-                <tr>
-                <th></th>
-                <th>Personal Electric Vehicles</th>
-                <th>See this PEV</th>
-                <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                {products.map((product) => {
-                return <Product key={product.id} product={product} handleClick={handleClick}  />;
-                
-                })}
-            </tbody>
-            </table>
-        </section>
-    </div>
+        <div className="grid grid-cols-3 grid-rows-2 " >
+            {products.map((product) => {
+            return <Product key={product.id} product={product} handleClick={handleClick}  />;
+            })}
+         </div>
     );
 }
 

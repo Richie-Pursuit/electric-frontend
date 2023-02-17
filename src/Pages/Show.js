@@ -1,10 +1,11 @@
 import React from 'react';
 import ProductDetails from '../Components/ProductDetails';
+import '../Components/indexShow.css'
 
 function Show(props) {
     return (
-        <div>
-            <h1>Show</h1>
+        <div className='background'>
+           
             <ProductDetails />
             
         </div>

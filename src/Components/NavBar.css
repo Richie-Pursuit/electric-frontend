@@ -1,0 +1,43 @@
+.count{
+    background-color: red;
+    padding: 1px;
+    border-radius: 5px;
+    box-shadow: 5px;
+}
+
+.navTitle{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 10px;
+    border: solid;
+    color: blue;
+
+}
+.about{
+    margin: 10px;
+    padding: 10px;    
+    border-radius: 15px;
+    border: solid;
+    color: blue;
+
+}
+.addNav{
+    padding-top:20px;
+    padding-left: 5px;
+    padding-right: 5px;
+      
+    border-radius: 15px;
+    justify-content: center;
+    color: red;
+    border: solid;
+    border-color:blue;
+    
+}
+.bar{
+    background: url(/assets/background.jpeg);
+    background-size:cover;
+    border-image: fill;
+    border: solid;
+    border-color: rgb(158, 167, 57);
+}

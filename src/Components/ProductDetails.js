@@ -42,36 +42,36 @@ function ProductDetails() {
 
 
     return (
-        <>
-        <article>
-
-          {product.top_speed > 30 ? <span>⭐️</span> : null} {product.name}
-          <img className='pic' src={product.image} alt='product' />
-          <h5>
-            <span>
-              {product.name}
-            </span>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {product.image}
-          </h5>
-          <h6>{product.price}</h6>
-          <p>{product.description}</p>
-          <div className="showNavigation">
-            <>
-              <Link to={`/products`}>
-                <button>Back</button>
-              </Link>
-            </>
-            <>
-              <Link to={`/products/${product.id}/edit`}>
-                <button>Edit</button>
-              </Link>
-            </>
-            <>
-              <button onClick={handleDelete}>Delete</button>
-            </>
+        
+        <article className="grid grid-cols-2 grid-rows-3 gap-2" >
+          
+          <div className="col-span-full row-span-full " row>
+          {product.top_speed > 30 ? <div class="font-bold">⚠️ Warning! High top speed. Please check with your local laws before purchasing. ⚠️</div> : null} 
           </div>
+
+          <div className="col-start-1 col-end-2 " >
+          {product.name}
+          <img className='sm:w-96 max-w-sm' src={product.image} alt='product' />
+          </div>
+           
+          <div class="col-start-2">
+          <h6>PRICE: ${product.price}</h6>
+          <h6>TOP SPEED: {product.top_speed}mph</h6>
+          <p>PRODUCT DESCRIPTION: {product.description}</p>
+          </div>
+          
+            <div className="col-span-full">
+              <Link to={`/products`}>
+                <button class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" >Back</button>
+              </Link>
+              <Link to={`/products/${product.id}/edit`}>
+                <button class="shadow bg-purple-200 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">Edit</button>
+              </Link>      
+              <button class="shadow bg-red-200 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" onClick={handleDelete}>Delete</button>
+              </div>
+          
         </article>
-      </>
+      
     );
 }
 

@@ -1,10 +1,11 @@
 import React from 'react';
 import ProductNewForm from '../Components/ProductNewForm';
+import '../Components/indexShow.css'
 
 function New(props) {
     return (
-        <div>
-            <h2>New</h2>
+        <div className='background'>
+            
             <ProductNewForm />
             
         </div>

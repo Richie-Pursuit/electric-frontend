@@ -7,6 +7,7 @@ import Index from "./Pages/Index";
 import New from "./Pages/New";
 import Show from "./Pages/Show";
 import NavBar from "./Components/NavBar";
+import About from "./Pages/About";
 import './App.css';
 
 
@@ -41,18 +42,24 @@ function App() {
   }
 
   const cartTotal = cart.reduce((a, c) => a + c.qty * c.price, 0); 
+
+  const countCartItems = cart.length !== 0 && <div className='count'>{cart.length}</div>
+   
+  
   // price multiplied by quantities 
 
 
   // return alert("You have already added this product to the cart")
 
   return (
-    <div className="App">
+    <div className="grid">
       <Router>
-        <NavBar countCartItems={cart.length} />
+        <NavBar countCartItems={countCartItems} />
+
 
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="About" element={<About />} />
           <Route path="/products" element={<Index
            handleClick={handleClick}
            onRemove={onRemove}
@@ -71,3 +78,4 @@ function App() {
 }
 
 export default App;
+

@@ -1,13 +1,49 @@
+* {
+
+  background-color: #b7b5b2;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Helvetica';
+}
+h1,
+h2,
+h3 {
+  margin: 0.5rem 0;
+}
+h1 {
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 1.2rem;
+}
+h3 {
+  font-size: 1rem;
+}
+a {
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.row {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+.col-1 {
+  flex: 1;
+}
+.col-2 {
+  flex: 2;
+}
+img {
+  width: 4rem;
+  height: 5rem;
+}
+
+.grid > div{
+  text-align: center;
+  padding: 1em 2em;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

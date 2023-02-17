@@ -1,70 +1,12 @@
-# Getting Started with Create React App
+ELECTRIC
+A marketplace to browse the most popular personal electric vehicles such as e-bikes e-scooters and e-skateboards. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Nav Bar will have a selection of directories such as  the products where you will be able to see your cart and all items available. The add product button will allow the user to add a product. The cart button will show you how many items are in your cart and bring you back to the cart if need so. The about button will give a description of the creator of the app.  The products page will allow the user to add items into cart, see the various financial options as well as check out. Once checked out the item will be processed. The product details page will allow the user know if the vehicle’s top speed is over 30mph to check their local laws regarding their purchase. The product detail page will also give a brief description of the item as well as the price.
 
-## Available Scripts
+- A market place where the user can browse through a website using a navigation bar and view a list of products.  
+- A marketplace where the user can purchase personal electric vehicles such as Electric bikes, skateboards, and scooters.
+- The user will be able to add a product if it is not listed.
+- The User will be able to add multiple items to cart and check out.
+- The user will be able to see a list of all the products
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Samantha is 23 year old recent graduate who lives in Manhattan, NY.  Her commute to work is 3 miles away and she is interested in buying an electric scooter to save money on buying monthly metro cards.  Using the Its Electric app, Samantha can browse and view which products are in stock and check out. If item Samantha is looking for is not listed, she can click on the inventory button and add the product to the items list and purchase it
