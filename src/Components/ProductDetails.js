@@ -43,9 +43,9 @@ function ProductDetails() {
 
     return (
         
-        <article className="grid grid-cols-2 grid-rows-3 gap-2" >
+        <article className="pb-20 mb-20 m-10 grid grid-cols-2 grid-rows-10 gap-1" >
           
-          <div className="col-span-full row-span-full " row>
+          <div className="col-span-full row-span-1 " row>
           {product.top_speed > 30 ? <div class="font-bold">⚠️ Warning! High top speed. Please check with your local laws before purchasing. ⚠️</div> : null} 
           </div>
 
